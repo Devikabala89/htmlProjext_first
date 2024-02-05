@@ -1,0 +1,39 @@
+.logo{
+    width: 2cm;
+}
+body{
+ background-image:url(background.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: large;
+ background-attachment: fixed;
+ margin-left: 150px;
+}
+a{
+    text-decoration: none;
+    color: rgba(252, 7, 150, 0.884);
+}
+#nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    word-spacing: 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+#nav .textlink:hover{
+    color: maroon;
+    background-color: palevioletred;
+      
+}
+
+div:hover{
+  font-style: italic;
+  }
+
+div dt{
+    font-weight: bold;
+}

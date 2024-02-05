@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tutorial</title>
+    <link rel="Stylesheet" href="project.css">
+</head>
+<body>
+    <div id="nav">
+        <nav> <a href="project.html"><img class="logo" src="leaf.png" label="logo"></a>
+    
+       
+        <a class="textlink" href="project.html">Home</a>
+        <a class="textlink" href="projecthtml.html">HTML</a>
+        <a class="textlink" href="projectCSS.html">CSS</a>
+        </nav>
+    </div>
+    <div>
+       <dl>
+        <dt>What is an HTML element?</dt>
+        <dd>An HTML element is defined by a start tag, some content, and an end tag: <br>
+            < tagname> Content goes here... < /tagname></dd>
+        <dt>Comment line syntax in html</dt>
+        <dd>It is represented as < !-- comment here -- ><br>
+        Comment line helps the reability of code.
+                </dd>
+       </dl>
+           </div>
+           <div id="Basics">
+            Basic structure of HTML code is as follows <br>
+            <img src="basic html structure.PNG"/><br>
+            <dl>
+                <dt>!DOCTYPE </dt>
+                <dd><ul><li>The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.</li>
+
+                    <li>It must only appear once, at the top of the page (before any HTML tags).</li></ul></dd>
+                <dt>HTML tag</dt>
+                <dd><ul><li>HTML tag always comes after DOCTYPE type and ends at the end of the file < /html></li></ul></dd> <br>
+                <dt>Head tag</dt>
+                <dd><ul><li>The < head> element is a container for metadata (data about data) and is placed between the < html> tag and the < body> tag.
+
+                </li>                <li>Metadata is data about the HTML document. Metadata is not displayed.</li>
+                    
+                    <li>Metadata typically define the document title, character set, styles, scripts, and other meta information.</li></ul></dd>
+
+                <dt>Title tag</dt>
+                <dd><ul><li>The < title> tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</li>
+
+                    <li>The < title> tag is required in HTML documents</li></ul></dd>
+                <dt>Body tag</dt>
+                <dd><ul><li>The < body> tag defines the document's body.</li>
+
+                    <li>The < body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li></ul></dd>
+            </dl>
+           </div>
+           <div id="tables">
+            <h3>Tables</h3>
+            <li>In HTML Table is a representation of data arranged in rows and columns.</li>
+
+            <li>< tr> tag is used to create table rows.</li>
+            <li>< th> and < td> tags can be used to create columns.</li>
+
+        </div>
+           <div id="forms">
+            <h3>Forms</h3>
+            <p>The < form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+            <dl>
+                Different types of form elements are,<br>
+                <dt>Input element</dt>
+                <dd>The < input> tag specifies an input field where the user can enter data. The < input> element is the most important form element. </dd><br>
+                <dt>Label element</dt>
+                <dd>The < label> tag defines a label for many form elements. <br>
+
+                    The < label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.</dd>
+                <br><dt>Radio Buttons</dt>
+                <dd>The < input type="radio"> defines a radio button.<br>
+
+                    Radio buttons let a user select ONE of a limited number of choices.</dd>
+                <br><dt>Checkboxes</dt>
+                <dd>The < input type="checkbox"> defines a checkbox.<br>
+
+                    Checkboxes let a user select ZERO or MORE options of a limited number of choices</dd>
+                <br><dt>Submit Button</dt>
+                <dd>The < input type="submit"> defines a button for submitting the form data to a form-handler.<br>
+
+                    The form-handler is typically a file on the server with a script for processing input data.<br>
+                    
+                    The form-handler is specified in the form's action attribute.</dd>
+                <br><dt>Name Attribute for < input></dt>
+                <dd>Notice that each input field must have a name attribute to be submitted. <br>
+
+                    If the name attribute is omitted, the value of the input field will not be sent at all.</dd>
+                
+            </dl>
+            <h2>Sample form</h2>
+            <form>
+                <table border="3px" cellpadding="20" style="width: 100%;" >
+                    <tr>
+                        <th colspan="2"> Registration Form</th>
+                    </tr>
+                    <tr>
+                        <td><label for="Name"> Student Name </label></td>
+                        <td><input type="text" name="Name" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="DOB"> Date of Birth </label></td>
+                        <td><input type="date" name="DOB" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender"> Gender</label></td>
+                        <td>Male<input type="radio" name="gender"/> Female<input type="radio" name="gender"/> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"> Email ID </label></td>
+                        <td><input type="email" name="email" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone"> Mobile No. </label></td>
+                        <td><input type="number" name="email" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="State"> State </label></td>
+                        <td><input type="text" name="State" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">country</label></td>
+                        <td><select name="country">
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Germany</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="register" /></td>
+                    </tr>
+                </table>
+        
+            </form>
+           </div>
+
+           <h2> HTML code part of the above form is shown below,</h2><br>
+           <img src="form code pic.PNG"/>
+       
+</body>
+</html>
